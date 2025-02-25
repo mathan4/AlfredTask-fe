@@ -7,7 +7,7 @@ const GetAllFlashcardComponent = () => {
 
     const getAllFlashcardsComponent = async () => {
       const response = await axios.get(
-        "https://alfred-task-be.vercel.app/api/v1/leitner"
+        "https://alfredtask-be.onrender.com/api/v1/leitner/flashcards"
       );
       await setFlashCard(response.data);
       

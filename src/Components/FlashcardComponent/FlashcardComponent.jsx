@@ -15,7 +15,7 @@ const FlashcardComponent = ({ flashcard }) => {
       if (flashcard.answer === userAnswer) {
         const res = true;
         const response = await axios.post(
-          `https://alfred-task-be.vercel.app/api/v1/leitner/flashcards/${flashcard._id}`,
+          `https://alfredtask-be.onrender.com/api/v1/leitner/flashcards/${flashcard._id}`,
           { res },
           {
             headers: {

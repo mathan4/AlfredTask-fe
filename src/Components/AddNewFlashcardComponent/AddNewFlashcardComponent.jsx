@@ -31,7 +31,7 @@ const AddNewFlashcardComponent = () => {
 
     if (validateFields()) {
       try {
-        const response = await axios.post('https://alfred-task-be.vercel.app/api/v1/leitner/addflashcards', {
+        const response = await axios.post('https://alfredtask-be.onrender.com/api/v1/leitner/addflashcards', {
           question,
           answer,
           box: 1,  
